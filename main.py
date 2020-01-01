@@ -9,8 +9,8 @@ thefile.write('## Teilnehmerliste:' + '\n')
 
 with open('teilnehmer.csv') as csvfile:
     reader = csv.DictReader(csvfile)
-    thefile.write('|' + 'NR' + '|' + 'NAME' + '|' + 'VEREIN' + '|' + 'SPIELER' + '|' +'\n')
+    thefile.write('| ' + 'NR' + ' | ' + 'NAME' + ' | ' + 'VEREIN' + ' | ' + 'SPIELER' + ' |' +'\n')
     for row in reader:
-        thefile.write('|' + row['NR'] + '|' + row['NAME'] + '|' + row['VEREIN'] + '|' + row['SPIELER'] + '|' +'\n')
+        thefile.write('| ' + row['NR'] + ' | ' + row['NAME'] + ' | ' + row['VEREIN'] + ' | ' + row['SPIELER'] + ' |' +'\n')
 
 thefile.close()
