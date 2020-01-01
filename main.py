@@ -4,8 +4,8 @@ import csv
 thefile = open('/home/fb/bouleit/bouleit.github.io/README.md', 'w', 1)
 
 thefile.write('# Boule iT Turnier v0.1' + '\n')
-thefile.write('## Schweizer System mit Buchholz-Wertung' + '\n')
-thefile.write('## Teilnehmerliste:' + '\n')
+thefile.write('### Schweizer System mit Buchholz-Wertung' + '\n')
+thefile.write('### Teilnehmerliste:' + '\n')
 
 # render table from .csv
 with open('teilnehmer.csv') as csvfile:
@@ -17,6 +17,6 @@ with open('teilnehmer.csv') as csvfile:
     thefile.write('\n')
 
 # are there any spare players?
-thefile.write('## Freilos:' + '\n')
+thefile.write('### Freilos:' + '\n')
 
 thefile.close()
