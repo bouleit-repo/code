@@ -21,4 +21,26 @@ with open('teilnehmer.csv') as csvfile:
 # are there any spare players?
 thefile.write('### Freilos:' + '\n')
 
+# render table from .csv
+with open('freilos.csv') as csvfile:
+    reader = csv.DictReader(csvfile)
+    thefile.write('\n')
+    thefile.write('|' + 'NR' + '|' + 'NAME' + '|' + 'VEREIN' + '|' + 'SPIELER' + '|' +'\n')
+    for row in reader:
+        thefile.write('|' + row['NR'] + '|' + row['NAME'] + '|' + row['VEREIN'] + '|' + row['SPIELER'] + '|' +'\n')
+    thefile.write('\n')
+
+# calculate round 1
+thefile.write('### Runde 1:' + '\n')
+
+# render table from .csv
+with open('runde1.csv') as csvfile:
+    reader = csv.DictReader(csvfile)
+    thefile.write('\n')
+    thefile.write('|' + 'NR' + '|' + 'NAME' + '|' + 'BAHN' + '|' + 'ERGEBNIS' + '|' +'\n')
+    for row in reader:
+        thefile.write('|' + row['NR'] + '|' + row['NAME'] + '|' + row['BAHN'] + '|' + row['ERGEBNIS'] + '|' +'\n')
+    thefile.write('\n')
+
+
 thefile.close()
