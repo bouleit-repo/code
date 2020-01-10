@@ -4,7 +4,7 @@ import csv
 thefile = open('/home/fb/bouleit/bouleit.github.io/README.md', 'w', 1)
 
 thefile.write('# BOULE iT Turnier 01.01.2020' + '\n')
-thefile.write('Durch die Verwendung des „BOULE iT Turnier“ Internetseite stimmen Sie für die Dauer des Turniers zu, dass Ihre Angaben (Name, Lizenznummer, Name des Vereins) laut EU-Datenschutz-Grundverordnung (DSGVO) gespeichert und genutzt werden, beziehungsweise dass die Ergebnisse nach dem Turnier an den Österreichischen Pétanque Verband weitergegeben werden.' + '\n')
+thefile.write('Durch die Verwendung der „BOULE iT Turnier“ Internetseite stimmen Sie für die Dauer des Turniers zu, dass Ihre Angaben (Name, Lizenznummer, Name des Vereins) laut EU-Datenschutz-Grundverordnung (DSGVO) gespeichert und genutzt werden, beziehungsweise dass die Ergebnisse nach dem Turnier an den Österreichischen Pétanque Verband weitergegeben werden.' + '\n')
 # thefile.write('Bei Open-Turniers unterschreiben Spieler die in ihren Verein die Datenschutz-Erklärung (laut DSVGO) noch nicht unterschrieben haben, sowie vereinslose Spieler die Datenschutz-Erklärung (laut DSVGO) bei der Registrierung / vor dem Beginn des Turniers.' + '\n')
 thefile.write('### Schweizer System mit Buchholz-Wertung' + '\n')
 thefile.write('### Teilnehmerliste:' + '\n')
